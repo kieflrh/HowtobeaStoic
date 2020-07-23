@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"/>
+           <!-- app:destination="@id/nav_home_second" /> -->
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.howtobeastoic.HomeFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lesson_one"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_one"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_two"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_two"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_three"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_three"
+        tools:layout="@layout/lesson_fragment" />
+
+     <fragment
+        android:id="@+id/lesson_four"
+         android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_four"
+         tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_five"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_five"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_six"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_six"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_seven"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_seven"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_eight"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_eight"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_nine"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_nine"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_ten"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_two"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_eleven"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_one"
+        tools:layout="@layout/lesson_fragment" />
+
+    <fragment
+        android:id="@+id/lesson_twelve"
+        android:name="com.example.howtobeastoic.LessonOneFragment"
+        android:label="lesson_twelve"
+        tools:layout="@layout/lesson_fragment" />
+</navigation>

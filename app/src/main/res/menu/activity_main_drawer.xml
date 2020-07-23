@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_one"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_one_title" />
+        <item
+            android:id="@+id/nav_two"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_two_title" />
+        <item
+            android:id="@+id/nav_three"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_three_title" />
+        <item
+            android:id="@+id/nav_four"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_four_title" />
+        <item
+            android:id="@+id/nav_five"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_five_title" />
+        <item
+            android:id="@+id/nav_six"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_six_title" />
+        <item
+            android:id="@+id/nav_seven"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_seven_title" />
+        <item
+            android:id="@+id/nav_eight"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_eight_title" />
+        <item
+            android:id="@+id/nav_nine"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_nine_title" />
+        <item
+            android:id="@+id/nav_ten"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_ten_title" />
+        <item
+            android:id="@+id/nav_eleven"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_eleven_title" />
+        <item
+            android:id="@+id/nav_twelve"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="@string/lesson_twelve_title" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/send_toast"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Toast!" />
+        </menu>
+    </item>
+</menu>
