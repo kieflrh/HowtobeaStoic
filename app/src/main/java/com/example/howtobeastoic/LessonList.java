@@ -1,14 +1,7 @@
 package com.example.howtobeastoic;
 
-import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-
-import java.util.ArrayList;
-import java.util.stream.Stream;
 
 
 public class LessonList implements Parcelable {
@@ -18,8 +11,6 @@ public class LessonList implements Parcelable {
     private String m_content;
     private String m_quote;
     private int m_iconID;
-
-    private String nameSTR;
 
 
     public LessonList( String title, String content, String quote, int icon) {

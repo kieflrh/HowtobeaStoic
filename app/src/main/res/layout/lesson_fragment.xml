@@ -11,14 +11,16 @@
         android:id="@+id/LessonContentTV"
         android:layout_width="295dp"
         android:layout_height="286dp"
+        android:layout_marginTop="118dp"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="16sp"
+        android:gravity="fill_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
+        app:layout_constraintTop_toBottomOf="@+id/LessonQuoteTV"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/LessonTitleTV"
@@ -37,13 +39,15 @@
         android:id="@+id/LessonQuoteTV"
         android:layout_width="235dp"
         android:layout_height="161dp"
+        android:layout_marginTop="16dp"
+        android:bufferType="spannable"
         android:fontFamily="cursive"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintTop_toBottomOf="@+id/LessonTitleTV"
+        app:layout_constraintVertical_bias="0.04" />
 </androidx.constraintlayout.widget.ConstraintLayout>
