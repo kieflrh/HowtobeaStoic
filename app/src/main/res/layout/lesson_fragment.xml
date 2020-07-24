@@ -8,24 +8,9 @@
     android:background="@color/colorBackground">
 
     <TextView
-        android:id="@+id/LessonContentTV"
-        android:layout_width="295dp"
-        android:layout_height="286dp"
-        android:layout_marginTop="118dp"
-        android:text=""
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="16sp"
-        android:gravity="fill_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LessonQuoteTV"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/LessonTitleTV"
         android:layout_width="323dp"
-        android:layout_height="67dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -38,7 +23,7 @@
     <TextView
         android:id="@+id/LessonQuoteTV"
         android:layout_width="235dp"
-        android:layout_height="161dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:bufferType="spannable"
         android:fontFamily="cursive"
@@ -50,4 +35,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LessonTitleTV"
         app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/LessonContentTV"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="fill_horizontal"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LessonQuoteTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

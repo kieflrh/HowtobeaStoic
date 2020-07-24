@@ -1,28 +1,15 @@
 package com.example.howtobeastoic;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -32,11 +19,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    //private AppBarConfiguration mAppBarConfiguration;
     private DrawerLayout drawer;
     private static List<LessonList> list = new ArrayList<LessonList>();
 
-   // private LessonList mItem;
+    private TextView titleTV;
+    private TextView introTV;
+    private TextView quoteTV;
+
+    private LessonList mItem;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -60,6 +50,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navView.setCheckedItem(R.id.nav_home);
         }
         populateLessonList();
+
+        mItem = list.get(0);
+
+        //titleTV = (TextView) findViewById(R.id.LessonTitleTV);
+        //introTV = (TextView) findViewById(R.id.LessonContentTV);
+        //quoteTV = (TextView) findViewById(R.id.LessonQuoteTV);
+
+        //titleTV.setText("Hello World");
+        //introTV.setText(mItem.getContent());
+        //quoteTV.setText(mItem.getQuote());
+
+        /*titleTV.setText(mItem.getTitle());
+        introTV.setText(mItem.getContent());
+        quoteTV.setText(mItem.getQuote());*/
+
     }
 
 
